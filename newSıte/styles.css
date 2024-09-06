@@ -1,0 +1,710 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playwrite+CU:wght@100..400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: "Courgette", cursive;
+}
+body{
+    background-color: hsla(331.30434782608694, 41.29%, 24.47%, 2.00); 
+    width: 100%;
+    height: 200vh;
+    
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(145deg, #dd1173, hsla(220, 50.00%, 21.33%, 1.00) 57%, #350e47);
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 0px;
+    position: absolute;
+    z-index: 999;
+}
+.logo{
+    width: 110px;
+    height: 55px;
+    border-radius: 10px;
+    margin-left: 10%;
+    
+}
+.nvgtn-btn{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   margin-right: 150px;
+   
+}
+.nvgtn ul{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    gap: 30px;
+}
+.nvgtn ul li{
+    color: white;
+    list-style: none;
+   
+}
+.nvgtn ul li:hover{
+    transition: 0.3s ease;
+    
+}
+.nvgtn ul li a{
+    padding: 5px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+}
+.nvgtn ul li a:hover {
+    transition: 0.3s ease;
+    text-decoration:5px solid red underline;
+    text-underline-offset: 10px ;
+}
+
+.btn {
+    width: 60px;
+    height: 25px;
+    padding: 0px;
+    border-radius: 5px;
+    color: white;
+    font-style: italic;
+    border: 2px solid white;
+    font-family: "Courgette", cursive;
+    cursor: pointer;
+    background-color: rgb(203, 7, 1);
+}
+.btn:hover{
+    transition: 0.3s ease;
+    color: black;
+
+}
+.intro{
+   /* position: relative; */
+   position: relative;
+   top:83px;
+   width: 95vw;
+   height: 80vh;
+   margin: 0 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 0;
+}
+.intro-left{
+    position: absolute;
+    width: 60%;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* z-index: 2; */
+    z-index: 2;
+}  
+.intro-right {
+    position: relative;
+    left: 50%;
+    top:0%;
+    width: 45%;
+    z-index: 1;
+}
+.intro-left h2{
+    color: white;
+    font-size: 60px;
+}
+.intro-left p{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+.intro-left-btn{
+    border-style: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 60px;
+    font-family: "Courgette", cursive;
+    background-color: #dd1173;
+    cursor: pointer;
+}   
+.intro-left-btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px;
+}
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    background-color: #1b1b1b;
+    padding-bottom: 0; /* İç boşluğu kaldır */
+}
+.about-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%; /* Tam genişlik veriyoruz */
+}
+.about-top{
+  color: antiquewhite;
+  padding: 35px 20% 30px 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about-top p{
+    font-size: larger;
+    padding: 20px ;
+    opacity: 0.6;
+  }
+.about-top h2{
+    font-size: 35px;
+  }
+.about-bottom{
+    background-color: #1b1b1b;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Yatayda ortalamak için */
+    align-items: flex-end;   /* Dikeyde alta yapıştırmak için */
+}
+.image{
+    width: 100%;
+    height: auto; /* Resmin orijinal boyutuna göre yüksekliğini ayarlar */
+    object-fit: contain; /* Resmin bozulmadan gösterilmesini sağlar */
+    position: relative;
+}
+.features{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.features{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.first{
+    width: 80vw;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.left{
+    width: 70%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+} 
+.left h2{
+  padding: 20px 20px 10px 20px;
+  font-size: 50px;
+}
+.left p{
+    padding: 20px 20px 10px 20px;
+    font-size: 25px;
+    line-height: 1.5;
+  }
+.right{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.features-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.features-content P{
+   font-size:x-large;
+}
+.features-content img, h2, p{
+    padding: 10px;
+}
+.numbers{
+    width: 80vw;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.numbers-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.numbers-content h2{
+    font-size: xx-large;
+}
+.numbers-content p{
+    font-size: x-large;
+}
+.numbers-content img, h2, p{
+    padding: 10px;
+}
+.number-char{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number-char p{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: start;
+}
+.logoss{
+    width: 90vw;
+}
+.bottom{
+    width: 100%;
+    height: auto; 
+    background-color: #1b1b1b;
+}
+.sub{
+    color: white;
+    text-align: center;
+    padding: 100px 50px;
+}
+.sub h2{
+    font-size: xx-large;
+    padding: 30px 10px;
+}
+.sub p{
+    padding: 30px 10px;
+    opacity: 0.6;
+}
+.sub span input, button{
+    height: 50px;
+    border-style: none;
+}
+input{
+    border-radius: 5px 0 0 5px;
+    outline-color: #dd1173;
+    font-family: "Courgette", cursive;
+}
+input:focus{
+    border-style: none;
+}
+.btn2{
+    border-radius: 0 5px 5px 0;
+    background-color: #dd1173;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Courgette", cursive;
+}
+.btn2:hover{
+    transition: 0.3s ease;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center ;
+}
+.A{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 80px;
+ 
+}
+.A a{ 
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    opacity: 0.7;
+    
+}
+/* Animasyon başlangıç durumu */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Göründüğünde uygulanacak stil */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Yavaş yavaş görünme animasyonu */
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==-------=-=-=-=-=-=-=-= */
+/* Modal genel yapısı */
+.modal {
+    display: none; /* Başlangıçta gizlenmiş olacak */
+    position: fixed; /* Sabit pozisyonda tüm ekrana yayılacak */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Karartma efekti */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Sayfanın en üst katmanında göster */
+  }
+  
+  /* Modal içeriği */
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%; /* Genişlik %50 */
+    height: 50%; /* Yükseklik %50 */
+    position: relative;
+    animation: modalOpen 0.5s ease-out; /* Animasyon efekti */
+  }
+  
+  /* Modal açılış animasyonu */
+  @keyframes modalOpen {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Modal kapatma butonu */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Form stil ayarları */
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .modal-content input {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .modal-content button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #dd1173;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+.toggle-modal {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .toggle-modal a {
+    color: #dd1173;
+    cursor: pointer;
+  }
+
+
+
+
+@media (max-width:800px) {
+    .hamburger {
+        width: 35px;
+        height: 25px;
+        font-size: 25px;
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        border-radius: 10px;
+        border-style: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 10, 192,0);
+        font-weight: bolder;
+
+    }
+    .hamburger:hover{
+        transition: 0.3s ease;
+        font-weight: lighter;
+        color: black;
+    }
+    .hamburger:focus + .nvgtn-btn{
+        display: flex;
+        animation: slideInRight 0.5s ease-in-out;
+       
+    }
+    @keyframes slideInRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+    }
+    @keyframes slideOutRight {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(100%);
+        }
+    }
+    header{
+        width:100%;
+        margin: 0;
+    }
+    .nvgtn-btn{
+        width: 100%;
+        height: 100vh; 
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        position: absolute;
+        left: 0;
+        top: 80px; 
+    }
+    .nvgtn-btn.active {
+        display: flex;
+        animation: slideInRight 0.5s ease-in-out forwards;
+    }
+    .nvgtn-btn.inactive {
+        animation: slideOutRight 0.5s ease-in-out forwards;
+    }
+    .nvgtn{
+        width: 100%;
+        height: 100vh; 
+        background-color: black;  
+        position: absolute;
+          
+    }
+    .nvgtn ul {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nvgtn ul li a {
+        margin: 20px 0 0 0 ;
+        text-decoration: none;
+    }
+    .logo{
+        margin: 0;
+        position: absolute;
+        left: 70%;
+    }
+    .btn {
+        position: absolute;
+        top: 210px;
+    }
+
+    .home{
+        height: 100vh;
+    }
+    .intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;   
+    }
+    .intro-right{
+        background-image: url(assets/screen3.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        width: 90vw;
+        height: 100%;
+        /* margin: 0 10px 0 10px; */
+        position: absolute;
+        left: 50%;
+        filter: blur(1px);
+      
+    }
+    .intro-right img{
+        display: none;
+    }
+   
+    .intro-left{
+        position: absolute;
+        width: 60%;
+        padding-left: 0px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        z-index: 2;
+    } 
+    
+    .intro-left h2{
+        color: white;
+        font-size: 40px;
+    }
+    .intro-left p{
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+    }
+    .about-top{
+        padding: 35px 15px 30px 15px;
+    }
+    .about-top h2{
+       
+        font-size: 20px;
+    }
+    .about-top p{
+       
+        font-size: 15px;
+    }
+    .first{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        gap: 50px;
+    }
+    .left{
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        text-align: center;
+    } 
+    .left h2{
+      padding: 20px 20px 10px 20px;
+      font-size: 30px;
+    }
+    .left p{
+        padding: 20px 20px 10px 20px;
+        font-size: 30px;
+      }
+    .right{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    .numbers{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        gap: 50px;
+    }
+    .footer{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center ;
+    }
+    .A{
+        width: 90vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 80px;
+     
+    }
+    /* Modal genel yapısı */
+    .modal {
+        display: none; /* Başlangıçta gizlenmiş olacak */
+        position: fixed; /* Sabit pozisyonda tüm ekrana yayılacak */
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5); /* Karartma efekti */
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Sayfanın en üst katmanında göster */
+      }
+      
+      /* Modal içeriği */
+      .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%; /* Genişlik %50 */
+        height: 60%; /* Yükseklik %50 */
+        position: relative;
+        animation: modalOpen 0.5s ease-out; /* Animasyon efekti */
+      }
+ 
+}
+
+@media (min-width:800px){
+    .hamburger {
+        display: none;
+    }
+}
