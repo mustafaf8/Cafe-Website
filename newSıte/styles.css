@@ -93,7 +93,7 @@ header{
 
 }
 .intro{
-   /* position: relative; */
+  
    position: relative;
    top:83px;
    width: 95vw;
@@ -155,7 +155,7 @@ header{
     align-items: center;
     height: auto;
     background-color: #1b1b1b;
-    padding-bottom: 0; /* İç boşluğu kaldır */
+    padding-bottom: 0; 
 }
 .about-view{
     display: flex;
@@ -163,7 +163,7 @@ header{
     align-items: center;
     justify-content: space-between;
     position: relative;
-    width: 100%; /* Tam genişlik veriyoruz */
+    width: 100%; 
 }
 .about-top{
   color: antiquewhite;
@@ -186,13 +186,13 @@ header{
     background-color: #1b1b1b;
     width: 100%;
     display: flex;
-    justify-content: center; /* Yatayda ortalamak için */
-    align-items: flex-end;   /* Dikeyde alta yapıştırmak için */
+    justify-content: center; 
+    align-items: flex-end;   
 }
 .image{
     width: 100%;
-    height: auto; /* Resmin orijinal boyutuna göre yüksekliğini ayarlar */
-    object-fit: contain; /* Resmin bozulmadan gösterilmesini sağlar */
+    height: auto; 
+    object-fit: contain; 
     position: relative;
 }
 .features{
@@ -358,20 +358,20 @@ input:focus{
     opacity: 0.7;
     
 }
-/* Animasyon başlangıç durumu */
+
 .hidden {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Göründüğünde uygulanacak stil */
+
 .visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Yavaş yavaş görünme animasyonu */
+
 @keyframes slideUpFadeIn {
     0% {
         opacity: 0;
@@ -383,19 +383,19 @@ input:focus{
     }
 }
 
-/* ==-------=-=-=-=-=-=-=-= */
+
 /* Modal genel yapısı */
 .modal {
-    display: none; /* Başlangıçta gizlenmiş olacak */
-    position: fixed; /* Sabit pozisyonda tüm ekrana yayılacak */
+    display: none; 
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Karartma efekti */
+    background-color: rgba(0, 0, 0, 0.5); 
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Sayfanın en üst katmanında göster */
+    z-index: 1000; 
   }
   
   /* Modal içeriği */
@@ -403,10 +403,10 @@ input:focus{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 50%; /* Genişlik %50 */
-    height: 50%; /* Yükseklik %50 */
+    width: 50%;
+    height: 50%;
     position: relative;
-    animation: modalOpen 0.5s ease-out; /* Animasyon efekti */
+    animation: modalOpen 0.5s ease-out;
   }
   
   /* Modal açılış animasyonu */
@@ -678,16 +678,16 @@ input:focus{
     }
     /* Modal genel yapısı */
     .modal {
-        display: none; /* Başlangıçta gizlenmiş olacak */
-        position: fixed; /* Sabit pozisyonda tüm ekrana yayılacak */
+        display: none; 
+        position: fixed; 
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5); /* Karartma efekti */
+        background-color: rgba(0, 0, 0, 0.5); 
         justify-content: center;
         align-items: center;
-        z-index: 1000; /* Sayfanın en üst katmanında göster */
+        z-index: 1000; 
       }
       
       /* Modal içeriği */
@@ -695,10 +695,10 @@ input:focus{
         background-color: white;
         padding: 20px;
         border-radius: 10px;
-        width: 90%; /* Genişlik %50 */
-        height: 60%; /* Yükseklik %50 */
+        width: 90%; 
+        height: 60%; 
         position: relative;
-        animation: modalOpen 0.5s ease-out; /* Animasyon efekti */
+        animation: modalOpen 0.5s ease-out;
       }
  
 }
