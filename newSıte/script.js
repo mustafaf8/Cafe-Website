@@ -109,7 +109,7 @@
           }
         });
         
-        // Signup linkine tıklayınca signup modalı açılır, login modalı kapanır
+       
         showSignupLink.onclick = function(e) {
           e.preventDefault();
           loginModal.style.display = "none";
